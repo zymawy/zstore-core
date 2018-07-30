@@ -25,6 +25,7 @@ class ZstoreServiceProvider extends ServiceProvider
     {
         $this->registerRoutes();
         $this->registerResources();
+
     }
 
     /**
@@ -37,6 +38,7 @@ class ZstoreServiceProvider extends ServiceProvider
         $this->registerServices();
         $this->registerProviders();
         $this->registerServicesAliases();
+        $this->registerPublishables();
     }
 
     /**
@@ -97,6 +99,26 @@ class ZstoreServiceProvider extends ServiceProvider
     {
         foreach (Zstore::providers() as $provider) {
             $this->app->register($provider);
+        }
+    }
+
+    /**
+     * Register Publishables Services
+     */
+    protected function registerPublishables()
+    {
+        $basePath = dirname(__DIR__);
+
+        $arrPublishable = [
+            'seeds' => [
+                "$basePath/publishable/seeders" => database_path('seeds'),
+            ]
+        ];
+
+        foreach ( $arrPublishable as $group => $paths ) {
+
+            $this->publishes($paths,$group);
+
         }
     }
 
