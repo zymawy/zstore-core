@@ -1,0 +1,85 @@
+{
+    "license": "MIT",
+    "name": "zymawy/z-store",
+    "homepage": "http://zymawy.com",
+    "type": "laravel-bundle",
+    "description": "The z-store e-commerce Framework.",
+    "keywords": ["z-store", "laravel", "e-commerce", "ecommerce", "shop", "portal", "market", "store"],
+    "minimum-stability": "dev",
+
+    "authors": [
+        {
+            "name": "Hamza Mallam",
+            "email": "zymawy@gmail.com"
+        }
+    ],
+
+    "support": {
+        "source": "https://github.com/zymawy/z-store",
+        "issues": "https://github.com/zymawy/z-store/issues"
+    },
+
+    "require": {
+        "php": "^7.1.3",
+        "nesbot/carbon": "^1.22.1",
+        "illuminate/support": "5.6.*",
+        "illuminate/http": "5.6.*",
+        "illuminate/database": "5.6.*",
+        "illuminate/validation": "5.6.*",
+        "illuminate/contracts": "5.6.*",
+        "illuminate/queue": "5.6.*",
+        "illuminate/routing": "5.6.*",
+        "illuminate/filesystem": "5.6.*",
+        "illuminate/pagination": "5.6.*",
+        "illuminate/container": "5.6.*",
+        "illuminate/session": "5.6.*",
+        "illuminate/bus": "5.6.*",
+        "illuminate/mail": "5.6.*",
+        "illuminate/notifications": "5.6.*",
+        "illuminate/hashing": "5.6.*",
+        "illuminate/auth": "5.6.*",
+        "intervention/image": "2.4.*",
+        "ramsey/uuid": "^3.7"
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "orchestra/testbench": "3.6.*",
+        "mockery/mockery": "~1.0",
+        "sebastian/diff": "^3.0"
+    },
+
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "Zstore\\": "src/"
+        }
+    },
+
+    "autoload-dev": {
+        "psr-4": {
+            "Antvel\\Tests\\": "tests"
+        },
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zstore\\ZstoreServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true
+}
