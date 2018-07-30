@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Antvel Shop package.
+ * This file is part of the Zstore Shop package.
  *
  * (c) Gustavo Ocanto <gustavoocanto@gmail.com>
  *
@@ -10,8 +10,8 @@
  */
 
 use Faker\Generator as Faker;
-use Antvel\Company\Models\Company;
-use Antvel\Categories\Models\Category;
+use Zstore\Company\Models\Company;
+use Zstore\Categories\Models\Category;
 
 $factory->define(Category::class, function (Faker $faker) use ($factory)
 {

@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Antvel Shop package.
+ * This file is part of the Zstore Shop package.
  *
  * (c) Gustavo Ocanto <gustavoocanto@gmail.com>
  *
@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-use Antvel\Product\Attributes;
+use Zstore\Product\Attributes;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;

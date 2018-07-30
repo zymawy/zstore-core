@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Antvel Shop package.
+ * This file is part of the Zstore Shop package.
  *
  * (c) Gustavo Ocanto <gustavoocanto@gmail.com>
  *
@@ -12,8 +12,8 @@
 use Carbon\Carbon;
 use Ramsey\Uuid\Uuid;
 use Faker\Generator as Faker;
-use Antvel\Orders\Models\Order;
-use Antvel\Comments\Models\Comment;
+use Zstore\Orders\Models\Order;
+use Zstore\Comments\Models\Comment;
 
 $factory->define(Comment::class, function (Faker $faker) use ($factory)
 {

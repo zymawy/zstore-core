@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Antvel Shop package.
+ * This file is part of the Zstore Shop package.
  *
  * (c) Gustavo Ocanto <gustavoocanto@gmail.com>
  *
@@ -11,14 +11,14 @@
 
 use Carbon\Carbon;
 use Faker\Generator as Faker;
-use Antvel\Companies\Models\Company;
+use Zstore\Companies\Models\Company;
 
 $factory->define(Company::class, function (Faker $faker) use ($factory)
 {
     return [
         //Profile information
-        'name' => 'Antvel e-commerce',
-        'description' => 'Laravel e-commerce solution.',
+        'name' => 'متجر زي ستور',
+        'description' => 'متجر زي ستور للارفيل.',
         'email' => $faker->unique()->safeEmail,
         'logo' => '/images/pt-default/' . $faker->unique()->numberBetween(1, 330) . '.jpg',
         'slogan' => $faker->catchPhrase,
@@ -37,9 +37,9 @@ $factory->define(Company::class, function (Faker $faker) use ($factory)
         'zip_code' => $faker->postcode,
 
         //Social information
-        'website' => 'http://antvel.com',
-        'twitter' => 'https://twitter.com/_antvel',
-        'facebook' => 'https://www.facebook.com/antvelecommerce',
+        'website' => 'http://Zstore.com',
+        'twitter' => 'https://twitter.com/_Zstore',
+        'facebook' => 'https://www.facebook.com/Zstoreecommerce',
 
         //SEO information
         'keywords' => implode(',', $faker->words(20)),
@@ -53,8 +53,8 @@ $factory->define(Company::class, function (Faker $faker) use ($factory)
 
 $factory->state(Company::class, 'default', function ($faker) {
     return [
-        'name' => 'Antvel e-commerce (default)',
-        'description' => 'Laravel e-commerce solution.',
+        'name' => 'متجر زي ستور (default)',
+        'description' => 'متجر زي ستور للارفيل.',
         'default' => true
     ];
 });

@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Antvel Shop package.
+ * This file is part of the Zstore Shop package.
  *
  * (c) Gustavo Ocanto <gustavoocanto@gmail.com>
  *
@@ -10,7 +10,7 @@
  */
 
 use Carbon\Carbon;
-use Antvel\Users\Models\User;
+use Zstore\Users\Models\User;
 use Faker\Generator as Faker;
 use Illuminate\Notifications\DatabaseNotification;
 
@@ -18,7 +18,7 @@ $factory->define(DatabaseNotification::class, function (Faker $faker) use ($fact
 {
     return [
         'notifiable_id' => function () { return factory(User::class)->create()->id; },
-        'data' => ['status' => 'foo', 'source_id' => '1', 'source_path' => 'antvel', 'label' => ''],
+        'data' => ['status' => 'foo', 'source_id' => '1', 'source_path' => 'Zstore', 'label' => ''],
         'notifiable_type' => User::class,
         'type' => stdClass::class,
         'id' =>  uniqid(),

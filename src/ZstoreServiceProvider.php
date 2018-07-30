@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Antvel Shop package.
+ * This file is part of the Zstore Shop package.
  *
  * (c) Gustavo Ocanto <gustavoocanto@gmail.com>
  *
@@ -40,7 +40,7 @@ class ZstoreServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register the Antvel resources.
+     * Register the Zstore resources.
      *
      * @return void
      */
@@ -51,19 +51,19 @@ class ZstoreServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register the Antvel routes.
+     * Register the Zstore routes.
      *
      * @return void
      */
     protected function registerRoutes()
     {
-        Route::namespace('Antvel')->middleware('web')->group(function () {
+        Route::namespace('Zstore')->middleware('web')->group(function () {
             $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
         });
     }
 
     /**
-     * Register Antvel services in the container.
+     * Register Zstore services in the container.
      *
      * @return void
      */
@@ -77,7 +77,7 @@ class ZstoreServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register Antvel services aliases in the container.
+     * Register Zstore services aliases in the container.
      *
      * @return void
      */
@@ -89,7 +89,7 @@ class ZstoreServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register Antvel services providers.
+     * Register Zstore services providers.
      *
      * @return void
      */

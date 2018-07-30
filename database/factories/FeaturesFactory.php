@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Antvel Shop package.
+ * This file is part of the Zstore Shop package.
  *
  * (c) Gustavo Ocanto <gustavoocanto@gmail.com>
  *
@@ -11,7 +11,7 @@
 
 
 use Faker\Generator as Faker;
-use Antvel\Features\Models\Feature;
+use Zstore\Features\Models\Feature;
 
 $factory->define(Feature::class, function (Faker $faker) use ($factory)
 {

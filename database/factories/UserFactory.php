@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Antvel Shop package.
+ * This file is part of the Zstore Shop package.
  *
  * (c) Gustavo Ocanto <gustavoocanto@gmail.com>
  *
@@ -11,8 +11,8 @@
 
 use Carbon\Carbon;
 use Faker\Generator as Faker;
-use Antvel\Users\Policies\Roles;
-use Antvel\Users\Models\{ User, EmailChangePetition };
+use Zstore\Users\Policies\Roles;
+use Zstore\Users\Models\{ User, EmailChangePetition };
 
 $factory->define(User::class, function (Faker $faker) use ($factory)
 {
@@ -38,8 +38,8 @@ $factory->state(User::class, 'admin', function ($faker) {
     return [
         'first_name' => 'Admin',
         'last_name' => 'Admin',
-        'email' => 'admin@antvel.com',
-        'nickname' => 'antvel',
+        'email' => 'admin@Zstore.com',
+        'nickname' => 'Zstore',
         'role' => 'admin',
     ];
 });
@@ -48,7 +48,7 @@ $factory->state(User::class, 'seller', function ($faker) {
     return [
         'first_name' => 'Seller',
         'last_name' => 'Seller',
-        'email' => 'seller@antvel.com',
+        'email' => 'seller@Zstore.com',
         'nickname' => 'seller',
         'role' => 'seller',
     ];
@@ -58,7 +58,7 @@ $factory->state(User::class, 'customer', function ($faker) {
     return [
         'first_name' => 'Customer',
         'last_name' => 'Customer',
-        'email' => 'customer@antvel.com',
+        'email' => 'customer@Zstore.com',
         'nickname' => 'customer',
         'role' => 'customer',
     ];
